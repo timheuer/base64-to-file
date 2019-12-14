@@ -20,3 +20,8 @@ jobs:
     - name: Echo file
       run: |
         echo ${{ steps.write_file.outputs.filePath }}
+    - name: Upload Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: 'final-file.txt'
+        path: 'myTemporaryFile.txt'
