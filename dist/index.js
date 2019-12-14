@@ -68,7 +68,10 @@ async function run() {
     if (tempFile.length == 0)
       core.setFailed('Certificate value is not set');
     
-    await fs.writeFile(fileName, tempFile);
+    fs.writeFile(fileName, tempFile, (err) => {
+      if (err) throw err;
+      console.log('Wrote file!');
+    });
 
     core.setOutput('filePath', fileName);
   } 
