@@ -1,4 +1,4 @@
-name: "units-test"
+name: "Action Test"
 on:
   push:
     branches:
@@ -9,8 +9,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ./
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Run Workflow
+      id: write_file
+      uses: ./
       with:
         fileName: 'myTemporaryFile.txt'
         encodedString: ${{ secrets.SOME_ENCODED_STRING }} # SGVsbG8sIFdvcmxkIQ==
+    - name: Echo file
+      run: |
+        echo ${{ steps.write_file.filePath }}
