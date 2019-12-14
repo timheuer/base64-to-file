@@ -1,13 +1,19 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'base64-to-file'
+description: 'Takes a base64-encoded string and writes to a file.'
+branding:
+  color: 'blue'
+  icon: 'file'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  fileName:
+    description: 'Name of the file when written to temp location'
     required: true
-    default: '1000'
+    default: 'decoded-file.file'
+  encodedString:
+    description: 'The base64 encoded string'
+    required: true
 outputs:
-  time: # output will be available to future steps 
-    description: 'The message to output'
+  filePath:
+    description: 'The temp file location'
 runs:
   using: 'node12'
   main: 'dist/index.js'
