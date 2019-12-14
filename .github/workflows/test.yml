@@ -19,4 +19,4 @@ jobs:
         encodedString: ${{ secrets.SOME_ENCODED_STRING }} # SGVsbG8sIFdvcmxkIQ==
     - name: Echo file
       run: |
-        echo ${{ steps.write_file.filePath }}
+        echo ${{ steps.write_file.outputs.filePath }}
