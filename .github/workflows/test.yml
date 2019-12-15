@@ -24,4 +24,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: 'final-file.txt'
-        path: 'myTemporaryFile.txt'
+        path: ${{ steps.write_file.outputs.filePath }}
