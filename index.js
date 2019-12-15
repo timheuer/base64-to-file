@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const fs = require('fs');
 
 // get input parameter values from config
-var fileName = process.env.TEMP + '\\' + core.getInput('fileName');
+var fileName = process.env.TMP + '\\' + core.getInput('fileName');
 var encodedString = core.getInput('encodedString');
 
 // most @actions toolkit packages have async methods
