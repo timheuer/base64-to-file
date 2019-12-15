@@ -57,7 +57,7 @@ const core = __webpack_require__(470);
 const fs = __webpack_require__(747);
 
 // get input parameter values from config
-var fileName = core.getInput('fileName');
+var fileName = process.env['TEMP'] + '\\' + core.getInput('fileName');
 var encodedString = core.getInput('encodedString');
 
 // most @actions toolkit packages have async methods
