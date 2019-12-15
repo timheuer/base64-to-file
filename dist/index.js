@@ -67,7 +67,7 @@ async function run() {
     const tempFile = Buffer.from(encodedString, 'base64');
     
     if (tempFile.length == 0)
-      core.setFailed('Certificate value is not set');
+      core.setFailed('Temporary file value is not set');
     
     fs.writeFile(fileName, tempFile, (err) => {
       if (err) throw err;
