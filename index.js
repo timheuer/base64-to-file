@@ -8,6 +8,7 @@ var encodedString = core.getInput('encodedString');
 // most @actions toolkit packages have async methods
 async function run() {
   try { 
+    console.log(process.env);
     const tempFile = Buffer.from(encodedString, 'base64');
     
     if (tempFile.length == 0)
