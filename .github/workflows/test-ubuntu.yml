@@ -1,0 +1,27 @@
+name: "Action Test (Ubuntu)"
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  # test action works running from the graph  
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Run Workflow
+      id: write_file
+      uses: ./
+      with:
+        fileName: 'myTemporaryFile.txt'
+        encodedString: ${{ secrets.SOME_ENCODED_STRING }} # SGVsbG8sIFdvcmxkIQ==
+    - name: Echo file
+      run: |
+        echo ${{ steps.write_file.outputs.filePath }}
+    - name: Upload Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: 'final-file.txt'
+        path: ${{ steps.write_file.outputs.filePath }}

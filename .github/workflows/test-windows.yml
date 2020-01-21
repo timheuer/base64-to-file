@@ -1,4 +1,4 @@
-name: "Action Test"
+name: "Action Test (Windows)"
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
 jobs:
   # test action works running from the graph  
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v1
