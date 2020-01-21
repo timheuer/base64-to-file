@@ -32,6 +32,14 @@ The Action has an output variable named filePath that you can use as this file i
   with:
       filelocation: ${{ steps.write_file.outputs.filePath }}
 ```
+## Building this repo
+After making modifications to the source index.js file, to properly package the change you need to run
+
+```
+npm run package
+```
+
+which will modify/create the /dist folder with the final index.js output
 
 ## Contributors ✨
 

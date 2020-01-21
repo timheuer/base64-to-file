@@ -55,9 +55,11 @@ module.exports = require("os");
 
 const core = __webpack_require__(470);
 const fs = __webpack_require__(747);
+const path = __webpack_require__(622);
 
 // get input parameter values from config
-var fileName = process.env.RUNNER_TEMP + '/' + core.getInput('fileName');
+var fileName = path.join(process.env.RUNNER_TEMP,core.getInput('fileName'));
+
 var encodedString = core.getInput('encodedString');
 
 // most @actions toolkit packages have async methods
