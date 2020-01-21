@@ -42,8 +42,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/filipkowicz"><img src="https://avatars3.githubusercontent.com/u/4691550?v=4" width="100px;" alt=""/><br /><sub><b>Michał Filipek</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=filipkowicz" title="Documentation">📖</a></td>
     <td align="center"><a href="https://timheuer.com/blog/"><img src="https://avatars3.githubusercontent.com/u/4821?v=4" width="100px;" alt=""/><br /><sub><b>Tim Heuer</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=timheuer" title="Code">💻</a> <a href="https://github.com/timheuer/base64-to-file/commits?author=timheuer" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/filipkowicz"><img src="https://avatars3.githubusercontent.com/u/4691550?v=4" width="100px;" alt=""/><br /><sub><b>Michał Filipek</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=filipkowicz" title="Documentation">📖</a></td>
   </tr>
 </table>
 
