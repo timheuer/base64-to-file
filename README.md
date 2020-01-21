@@ -10,7 +10,7 @@ Use this action if you need to get a file from a base64-encoded string that you 
 ```
 - name: Run Workflow
   id: write_file
-  uses: timheuer/base64-to-file@v1.0.2
+  uses: timheuer/base64-to-file@v1.0.3
   with:
     fileName: 'myTemporaryFile.txt'
     encodedString: ${{ secrets.SOME_ENCODED_STRING }}
