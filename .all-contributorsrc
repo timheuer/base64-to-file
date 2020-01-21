@@ -13,6 +13,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "timheuer",
+      "name": "Tim Heuer",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4821?v=4",
+      "profile": "https://timheuer.com/blog/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
