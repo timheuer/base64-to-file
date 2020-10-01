@@ -1,4 +1,4 @@
-name: "Action Test (Windows)"
+name: "Action Test (Ubuntu)"
 on:
   push:
     branches:
@@ -7,7 +7,10 @@ on:
 jobs:
   # test action works running from the graph  
   test:
-    runs-on: windows-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
     steps:
     - name: Checkout
       uses: actions/checkout@v1
@@ -23,5 +26,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@master
       with:
-        name: 'final-file.txt'
+        name: 'final-file-${{ matrix.os }}.txt'
         path: ${{ steps.write_file.outputs.filePath }}
