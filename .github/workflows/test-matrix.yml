@@ -1,4 +1,4 @@
-name: "Action Test (Ubuntu)"
+name: "Action Test"
 on:
   push:
     branches:
