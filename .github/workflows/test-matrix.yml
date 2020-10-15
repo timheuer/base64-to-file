@@ -18,7 +18,7 @@ jobs:
       id: write_file
       uses: ./
       with:
-        fileName: 'myTemporaryFile.txt'
+        fileName: 'temp/dir/not/exists/myTemporaryFile.txt'
         encodedString: ${{ secrets.SOME_ENCODED_STRING }} # SGVsbG8sIFdvcmxkIQ==
     - name: Echo file
       run: |

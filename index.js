@@ -1,5 +1,5 @@
 const core = require('@actions/core');
-const fs = require('fs');
+const fse = require('fs-extra')
 const path = require('path');
 
 // get input parameter values from config
@@ -16,7 +16,7 @@ async function run() {
     if (tempFile.length == 0)
       core.setFailed('Temporary file value is not set');
     
-    fs.writeFile(fileName, tempFile, (err) => {
+    fse.outputFile(fileName, tempFile, (err) => {
       if (err) throw err;
       console.log('Wrote file!');
     });

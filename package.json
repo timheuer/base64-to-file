@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/timheuer/base64-to-file#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6"
+    "@actions/core": "^1.2.6",
+    "fs-extra": "^9.0.1"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
