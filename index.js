@@ -10,9 +10,6 @@ if (core.getInput('fileDir', {required: false})) {
   fileName = path.join(process.env.RUNNER_TEMP,core.getInput('fileName'));
 }
 
-console.log(core.getInput('fileDir', {required: false}));
-console.log(fileName);
-
 var encodedString = core.getInput('encodedString');
 
 // most @actions toolkit packages have async methods
