@@ -15,7 +15,7 @@ Use this action if you need to get a file from a base64-encoded string that you 
     fileName: 'myTemporaryFile.txt'
     encodedString: ${{ secrets.SOME_ENCODED_STRING }}
 ```
-
+By default this writes the `fileName` to a temporary path defined by `env.RUNNER_TEMP`.  If you want a different path that is writable, specify `fileDir` as an input argument as well and then `fileDir` and `fileName` will be combined to create the path where the output will be written.  This assumes permissions in the `fileDir` are correct and does not try to set them.
 ## Using the file in a later step
 The Action has an output variable named filePath that you can use as this file is written to TEMP.  Make sure you ad an `id` to your step when using this Action so that you can easily pull it out of the steps context later.
 
