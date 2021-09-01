@@ -23,6 +23,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "tubone24",
+      "name": "tubone(Yu Otsubo)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9511227?v=4",
+      "profile": "https://portfolio.tubone-project24.xyz/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
