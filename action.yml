@@ -8,6 +8,9 @@ inputs:
     description: 'Name of the file when written to temp location'
     required: true
     default: 'decoded-file.file'
+  fileDir:
+    description: 'If it is set, change the output location to specific one from temp location.'
+    required: false
   encodedString:
     description: 'The base64 encoded string'
     required: true
