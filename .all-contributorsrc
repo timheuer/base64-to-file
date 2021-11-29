@@ -32,6 +32,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Ontokrat",
+      "name": "GG",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23409319?v=4",
+      "profile": "https://github.com/Ontokrat",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
