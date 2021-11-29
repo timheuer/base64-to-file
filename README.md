@@ -10,9 +10,10 @@ Use this action if you need to get a file from a base64-encoded string that you 
 ```
 - name: Run Workflow
   id: write_file
-  uses: timheuer/base64-to-file@v1
+  uses: timheuer/base64-to-file@v1.1
   with:
     fileName: 'myTemporaryFile.txt'
+    fileDir: './main/folder/subfolder/'
     encodedString: ${{ secrets.SOME_ENCODED_STRING }}
 ```
 By default this writes the `fileName` to a temporary path defined by `env.RUNNER_TEMP`.  If you want a different path that is writable, specify `fileDir` as an input argument as well and then `fileDir` and `fileName` will be combined to create the path where the output will be written.  This assumes permissions in the `fileDir` are correct and does not try to set them.
@@ -22,7 +23,7 @@ The Action has an output variable named filePath that you can use as this file i
 ```
 - name: Run Workflow
   id: write_file
-  uses: timheuer/base64-to-file@v1
+  uses: timheuer/base64-to-file@v1.1
   with:
     fileName: 'myTemporaryFile.txt'
     encodedString: ${{ secrets.SOME_ENCODED_STRING }}
