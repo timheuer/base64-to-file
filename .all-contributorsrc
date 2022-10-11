@@ -41,6 +41,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "danielz-nenda",
+      "name": "Daniel Zarins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74965667?v=4",
+      "profile": "http://www.nenda.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -48,5 +57,6 @@
   "projectOwner": "timheuer",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
