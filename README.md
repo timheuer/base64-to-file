@@ -1,6 +1,6 @@
 # Base64 to File
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Use this action if you need to get a file from a base64-encoded string that you may be storing in Secrets or elsewhere.  This can be useful for certificate signing and storing the base64 cert in the Secrets.
@@ -50,12 +50,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/filipkowicz"><img src="https://avatars3.githubusercontent.com/u/4691550?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michał Filipek</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=filipkowicz" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://timheuer.com/blog/"><img src="https://avatars3.githubusercontent.com/u/4821?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tim Heuer</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=timheuer" title="Code">💻</a> <a href="https://github.com/timheuer/base64-to-file/commits?author=timheuer" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://portfolio.tubone-project24.xyz/"><img src="https://avatars.githubusercontent.com/u/9511227?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tubone(Yu Otsubo)</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=tubone24" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Ontokrat"><img src="https://avatars.githubusercontent.com/u/23409319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>GG</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=Ontokrat" title="Documentation">📖</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/filipkowicz"><img src="https://avatars3.githubusercontent.com/u/4691550?v=4?s=100" width="100px;" alt="Michał Filipek"/><br /><sub><b>Michał Filipek</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=filipkowicz" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://timheuer.com/blog/"><img src="https://avatars3.githubusercontent.com/u/4821?v=4?s=100" width="100px;" alt="Tim Heuer"/><br /><sub><b>Tim Heuer</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=timheuer" title="Code">💻</a> <a href="https://github.com/timheuer/base64-to-file/commits?author=timheuer" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://portfolio.tubone-project24.xyz/"><img src="https://avatars.githubusercontent.com/u/9511227?v=4?s=100" width="100px;" alt="tubone(Yu Otsubo)"/><br /><sub><b>tubone(Yu Otsubo)</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=tubone24" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Ontokrat"><img src="https://avatars.githubusercontent.com/u/23409319?v=4?s=100" width="100px;" alt="GG"/><br /><sub><b>GG</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/commits?author=Ontokrat" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://www.nenda.com"><img src="https://avatars.githubusercontent.com/u/74965667?v=4?s=100" width="100px;" alt="Daniel Zarins"/><br /><sub><b>Daniel Zarins</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/issues?q=author%3Adanielz-nenda" title="Bug reports">🐛</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
