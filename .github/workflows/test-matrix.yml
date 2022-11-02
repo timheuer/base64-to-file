@@ -1,7 +1,12 @@
 name: "Action Test"
-on: [push, workflow_dispatch]
-    branches:
-      - master
+
+on:
+   push:
+     branches:
+       - master
+   workflow_dispatch:
+     branches:
+       - master
 
 jobs:
   # test action works running from the graph  
