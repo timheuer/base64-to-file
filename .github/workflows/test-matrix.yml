@@ -1,6 +1,5 @@
 name: "Action Test"
-on:
-  push:
+on: [push, workflow_dispatch]
     branches:
       - master
 
