@@ -15,7 +15,7 @@ var encodedString = core.getInput('encodedString');
 // most @actions toolkit packages have async methods
 async function run() {
   try {
-    console.log(process.env);
+    core.debug(process.env);
     const tempFile = Buffer.from(encodedString, 'base64');
 
     if (tempFile.length == 0)
@@ -23,7 +23,7 @@ async function run() {
 
     fse.outputFile(fileName, tempFile, (err) => {
       if (err) throw err;
-      console.log('Wrote file!');
+      core.debug('Wrote file!');
     });
 
     core.setOutput('filePath', fileName);
