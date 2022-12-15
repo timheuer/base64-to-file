@@ -17,18 +17,34 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
-    - name: Run Workflow
+      uses: actions/checkout@v3
+
+    - name: Write file (1)
       id: write_file
       uses: ./
       with:
         fileName: 'temp/dir/not/exists/myTemporaryFile.txt'
         encodedString: ${{ secrets.SOME_ENCODED_STRING }} # SGVsbG8sIFdvcmxkIQ==
+
+    - name: Write file (2)
+      id: write_file2
+      uses: ./
+      with:
+        fileName: 'myTemporaryFile.json'
+        encodedString: ${{ secrets.ENCODED_JSON }} 
+
     - name: Echo file
       run: |
         echo ${{ steps.write_file.outputs.filePath }}
+
     - name: Upload Artifact
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v3
       with:
         name: 'final-file-${{ matrix.os }}.txt'
         path: ${{ steps.write_file.outputs.filePath }}
+
+    - name: Upload Artifact 2
+      uses: actions/upload-artifact@v3
+      with:
+        name: 'final-file-${{ matrix.os }}.json'
+        path: ${{ steps.write_file2.outputs.filePath }}
