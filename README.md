@@ -1,6 +1,6 @@
 # Base64 to File
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Use this action if you need to get a file from a base64-encoded string that you may be storing in Secrets or elsewhere.  This can be useful for certificate signing and storing the base64 cert in the Secrets.
@@ -59,6 +59,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="http://www.nenda.com"><img src="https://avatars.githubusercontent.com/u/74965667?v=4?s=100" width="100px;" alt="Daniel Zarins"/><br /><sub><b>Daniel Zarins</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/issues?q=author%3Adanielz-nenda" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://github.com/RobbieFrodsham"><img src="https://avatars.githubusercontent.com/u/47029725?v=4?s=100" width="100px;" alt="Robbie Frodsham"/><br /><sub><b>Robbie Frodsham</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/issues?q=author%3ARobbieFrodsham" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://github.com/Blarkdackbyte"><img src="https://avatars.githubusercontent.com/u/14968844?v=4?s=100" width="100px;" alt="Basti"/><br /><sub><b>Basti</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/issues?q=author%3ABlarkdackbyte" title="Bug reports">🐛</a> <a href="https://github.com/timheuer/base64-to-file/commits?author=Blarkdackbyte" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/awesomund"><img src="https://avatars.githubusercontent.com/u/5211642?v=4?s=100" width="100px;" alt="Osmund Maheswaran"/><br /><sub><b>Osmund Maheswaran</b></sub></a><br /><a href="https://github.com/timheuer/base64-to-file/issues?q=author%3Aawesomund" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
