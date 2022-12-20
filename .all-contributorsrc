@@ -69,6 +69,15 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "awesomund",
+      "name": "Osmund Maheswaran",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5211642?v=4",
+      "profile": "https://github.com/awesomund",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
