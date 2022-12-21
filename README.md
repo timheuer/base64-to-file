@@ -33,6 +33,10 @@ The Action has an output variable named filePath that you can use as this file i
   with:
       filelocation: ${{ steps.write_file.outputs.filePath }}
 ```
+
+### Using this in a reusable workflow
+As a special note, when using reusable workflows, repository secrets do not naturally 'flow' through to the workflow.  So if your `encodedString` value is a repository secret and you expect this to work when this action is used in a reusable workflow, you need to specify the `secrets: inherit` value in that situation and put that where you are reusing this workflow.
+
 ## Building this repo
 After making modifications to the source index.js file, to properly package the change you need to run
 
