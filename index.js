@@ -19,7 +19,7 @@ async function run() {
     const tempFile = Buffer.from(encodedString, 'base64');
 
     if (tempFile.length == 0)
-      core.setFailed('Temporary file value is not set');
+      core.setFailed('encodedString value is not set');
 
     fse.outputFile(fileName, tempFile, (err) => {
       if (err) throw err;
