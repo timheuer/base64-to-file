@@ -87,6 +87,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "chenrui333",
+      "name": "Rui Chen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1580956?v=4",
+      "profile": "http://chenrui.dev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -95,5 +104,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
